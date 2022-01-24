@@ -1,6 +1,6 @@
 ﻿namespace Project.Models
 {
-    class Chat
+    public class Chat
     {
         public int id { get; set; }
         public long chatid { get; set; }

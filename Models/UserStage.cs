@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project.Models
 {
-    class UserStage
+    public class UserStage
     {
         public int id { get; set; }
         public long chatid { get; set; }

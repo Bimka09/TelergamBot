@@ -3,9 +3,8 @@
 namespace Project.Models
 
 {
-    class UserTask
+    public class UserTask
     {
-
         public int id { get; set; }
         public DateTime date { get; set; }
         public string task { get; set; }

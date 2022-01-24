@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project.Models
 {
-    class IterUserTask
+    public class IterUserTask
     {
         public int ID { get; set; }
         public int ChatID { get; set; }
