@@ -15,9 +15,9 @@ namespace Project
 {
     public class ThisBot : IDisposable
     {
-        private TelegramBotClient botClient = new TelegramBotClient("5053251455:AAH71IsfaqbCHe_aL41mQkT5vDc0XgvaMuE");
+        private TelegramBotClient botClient = new TelegramBotClient("*");
         private CancellationTokenSource cts = new ();
-        private ConnectDB ConnectDB = new ConnectDB("User ID=postgres;Password=k1t2i3f4;Host=localhost;Port=5432;Database=ToDoBot;");
+        private ConnectDB ConnectDB = new ConnectDB("*");
         private bool disposed = false;
        
         public async void Start()
@@ -146,7 +146,7 @@ namespace Project
                     await Task.Delay(TimeSpan.FromHours(12));
                 }
 
-                if (DateTime.Now.Hour == 18)
+                if (DateTime.Now.Hour == 20)
                 {
                     await AskProgressTasks();
                     await Task.Delay(TimeSpan.FromHours(12));
